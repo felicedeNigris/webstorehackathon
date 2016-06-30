@@ -31,8 +31,8 @@ h1 {
 }
 
 #showImg{
-  max-width: 65%;
-  max-height: 65%;
+  max-width: 67%;
+  max-height: 67%;
   margin-top: 3.0%;
   margin-left: 0.05%;
   position: absolute;
@@ -80,8 +80,8 @@ h1 {
 
 #overlay{
   background-color: rgba(0, 0, 0, 0.5);
-  height: 10000px;
-  width: 10000px;
+  height: 100%;
+  width: 100%;
   position: fixed;
   top:0;
   bottom: 0;
@@ -149,7 +149,7 @@ h1 {
 }
 
 .price{
-  top: 70%;
+  top: 68%;
   right: 1%;
   margin: auto;
   font-size: 45px;
@@ -168,11 +168,13 @@ h1 {
 
 .addToCart{
   top: 80%;
+  right: 20%;
 }
 
 .button{
+  width: 100px;
   top: 65%;
-  left: 87%;
+  left: 44%;
   margin: auto;
   position: relative;
 }
@@ -200,7 +202,7 @@ text-decoration: none;
   transition: all ease 1s;
 }
 
-@media screen and (max-height: 250px){
+@media screen and (max-height: 500px){
   .footer{
     top: 150%;
     transition: all ease 1s;
