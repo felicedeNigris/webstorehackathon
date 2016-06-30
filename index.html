@@ -1,13 +1,17 @@
 <!DOCtype HTML>
 <html>
 <head>
-  <title>Web Store</title>
-<!--BOOTSTRAP CDN-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<title>Web Store</title>
 <!--JQUERYCDN-->
 <script src="./Assets/jquery2.1.1.js"></script>
+<!--BOOTSTRAP CSS-->
+<script src="./Assets/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+<!--BOOTSTRAP JS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
 <!-- UNDERSCORE -->
-<script src="Assets/Underscore.js1.8.3"></script>
+<script src="./Assets/Underscore.js1.8.3"></script>
+<link rel="stylesheet" href="./Style/main.css" >
+<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:900' rel='stylesheet' type='text/css'>
 
 </head>
 <!--NAVIGATION BAR-->
@@ -24,43 +28,70 @@
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="music.html">Music</a></li>
-          <li><a href="showAll.html">All Products</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">View Prodcuts <span class="caret"></span></a>
+              <ul class="dropdown-menu dropCategories">
+                <li class="all"><a href="#">Show All</a></li>
+                <li role="separator" class="divider"></li>
+              </ul>
+          </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Link</a></li>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+                <input type="text" id="search" class="form-control" placeholder="Search">
+            </div>
+            <button type="button" class="btn btn-info search" >Search</button>
+          </form>
+          <li class="dropdown">
+              <a href="#" class="glyphicon glyphicon-shopping-cart" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> [ <span class="totalCart"></span> ]
+              </a>
+              <ul class="dropdown-menu dropShop">
+                <li><p> Items in your cart: </p></li>
+                <li class="divider"></li>
+              </ul>
+        </li>
         </ul>
       </div>
     </div>
   </nav>
 
 
-<div class="index">
+<div id="hero">
+  <center>
+    <img class="banner" src="https://cdn.pbrd.co/images/21XnnnZi.jpg">
+  </center>
+</div>
 
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-1">
+
+    </div>
+
+    <div class="col-md-8">
+
+      <div id="container">
+      <p><h1>Featured product:</h1></p>
+      </div>
+
+    </div>
+
+    <div class="co-md-1">
+    </div>
+  </div>
 </div>
 
 
-<div id="container">
-<div id="book 1" class="Fiction Book">
-		<div class="name"><BR></div>
-		<div class="category"><BR></div>
-		<div class="price"><BR></div>
-		<div class="picture_url"><BR></div>
-		<div class="selling_points"></div></div>
-<BR>
-<BR>
-<BR>
-<div id="book2"  class="Fiction Book">
-		<div class="name"><BR></div>
-		<div class="category"><BR></div>
-		<div class="price"><BR></div>
-		<div class="picture_url"><BR></div>
-		<div class="selling_points"></div>
-		</div>
-		</div>
 
+<div id='overlay'></div>
+<div id='show'></div>
 
-
-<script src="JS/main.js"></script>
+<script src="./JS/main.js"></script>
+<div class="footer"></div>
 </body>
 </html>
